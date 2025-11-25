@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills - Muhammad Dilawar Khan</title>
+  <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  font-size: 24px;
+font-weight: 900;
+  letter-spacing: 1px;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+form button{
+    margin: 0px 1rem;
+    list-style: none;
+    background-color: transparent;
+    font-size: x-large;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.navbar ul form button  {
+  color: white;
+  font-size: x-large;
+  display: flex;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar ul form button:hover {
+  color:burlywood;
+  cursor: pointer;
+   font-size: 1.03rem ;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar{
+        width: 100vw;
+    }
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .navbar ul form button {
+    margin: 10px 0;
+  }
+}
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(15, 29, 71);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .skills-section {
+      max-width: 1100px;
+      margin:20px auto;
+      padding: 0px 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .skill-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+    .skill-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #2980b9;
+    }
+.skill-desc {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+   <nav class="navbar">
+   <div class="logo">Dilawar's Portfolio</div>
+   <div class="hamburger" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<form action="/home" method="get"><button type="submit">Home</button></form>
+<form action="/about" method="get"><button  type="submit">About</button></form>
+<form action="/skills" method="get"><button type="submit">Skills</button></form>
+<form action="/projects" method="get"><button type="submit">Projects</button></form>
+<form action="/contactus" method="get"><button type="submit">Contact-us</button></form>
+<form action="/profile" method="get"><button type="submit">Profile</button></form>
+<form action="/admin" method="get"><button type="submit">Admin</button></form>
+<form action="/logout" method="get"><button type="submit">Logout</button></form>
+</ul>
+</nav>
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+  <section class="skills-section">
+    <h1 style="color: white;">My Skills</h1>
+    <div class="skills-grid">
+     
+      <div class="skill-card">
+        <div class="skill-title">HTML5</div>
+        <div class="skill-desc">Strong understanding of semantic HTML for creating structured and accessible web pages.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">CSS3</div>
+        <div class="skill-desc">Skilled in modern layouts using Flexbox, Grid, media queries for responsive design.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">JavaScript</div>
+        <div class="skill-desc">Proficient in core JavaScript, DOM manipulation, and dynamic web functionality.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Node.js</div>
+        <div class="skill-desc">Experienced in building backend applications using Node.js with Express framework.</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Express.js</div>
+        <div class="skill-desc">Built RESTful APIs, middleware, and routing logic for scalable applications.</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-title">MongoDB</div>
+        <div class="skill-desc">Familiar with designing schemas, working with Mongoose, and handling database operations.Used EJS templating engine to render dynamic content and build server-side views</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title"> EJS</div>
+        <div class="skill-desc">Used EJS templating engine to render dynamic content and build server-side views</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-title">Python (Intermediate)</div>
+        <div class="skill-desc">Understanding of Python fundamentals, data types, loops, and basic OOP concepts.</div>
+      </div>
+    </div>
+  </section>
+  </div>
+</body>
+</html>

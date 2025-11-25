@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Admin Profile</title>
+  <style>
+
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  font-size: 24px;
+font-weight: 900;
+  letter-spacing: 1px;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+form button{
+    margin: 0px 1rem;
+    list-style: none;
+    background-color: transparent;
+    font-size: x-large;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.navbar ul form button  {
+  color: white;
+  font-size: x-large;
+  display: flex;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+}
+.navbar ul form button:hover {
+  color:burlywood;
+   font-size: 1.03rem ;
+   cursor: pointer;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar{
+        width: 100vw;
+    }
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .navbar ul form button {
+    margin: 10px 0;
+  }
+}
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: rgb(15, 29, 71);
+    }
+    .profile-container {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+    img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: fill;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin: 0;
+      color: #2c3e50;
+    }
+    p {
+      margin: 10px 0;
+      color: #555;
+    }
+    .logout-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .logout-btn:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+
+  <nav class="navbar">
+   <div class="logo">Dilawar's Portfolio</div>
+   <div class="hamburger" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<form action="/home" method="get"><button type="submit">Home</button></form>
+<form action="/about" method="get"><button  type="submit">About</button></form>
+<form action="/skills" method="get"><button type="submit">Skills</button></form>
+<form action="/projects" method="get"><button type="submit">Projects</button></form>
+<form action="/contactus" method="get"><button type="submit">Contact-us</button></form>
+<form action="/profile" method="get"><button type="submit">Profile</button></form>
+<form action="/admin" method="get"><button type="submit">Admin</button></form>
+<form action="/logout" method="get"><button type="submit">Logout</button></form>
+</ul>
+</nav>
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+<body><div class="profile-container">
+    <img src="myimg.jpg" alt="Profile Picture" />
+    <h2>Muhammad Dilawar Khan</h2>
+    <p><strong>Email:</strong> mdilawarkhan473@gmail.com</p>
+    <p><strong>Role:</strong>Full Stack Developer</p>
+    <p><strong>Location:</strong> Muzaffarabad, AJK</p>
+     <p>contact: 0340-2652225</p>
+     <p>Instagram-id: raja-dilawar-khan473</p>
+    <form action="/logout" method="get"><button class="logout-btn" type="submit">Logout</button></form>
+   
+  </div>
+</body>
+</html>

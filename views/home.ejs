@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+
+
+    <style>
+          * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  font-size: 24px;
+font-weight: 900;
+  letter-spacing: 1px;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar ul form button  {
+  color: white;
+  font-size: x-large;
+  display: flex;
+  padding: 5px;
+  border-radius: 10px;
+  gap: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+}
+.navbar ul form button:hover {
+  color:burlywood;
+   font-size: 1.03rem ;
+
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin:  auto;
+  transition: background-color 0.3s ease;
+  
+}
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .navbar{
+        width: 100vw;
+    }
+  .hamburger {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .navbar ul form button {
+    margin: 10px 0;
+  }
+
+  .leftmain div{
+    font-size:1.3rem;
+}
+.leftmain div span{
+  font-size: 1.8rem;
+}
+}
+
+*{
+     margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: rgb(15, 29, 71);
+    
+    color: white;
+}
+.container{
+    width: 95vw; 
+    display: flex;
+    height: 95vh;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 7rem;
+    background-color: rgb(0, 0, 33);
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    
+}
+.right ul{
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    margin: 0px 1rem;
+    list-style: none;
+    background-color: transparent;
+    font-size: x-large;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+ button:hover{
+    cursor: pointer;
+    font-size: 1.55rem ;
+}
+.section1{
+    /* display: flex; */
+    justify-content: space-around;
+    margin: 5rem 1.2rem;
+}
+.leftmain{
+    font-size:2rem;
+}
+.leftmain span{
+    font-size:2.3rem ;
+    color:
+     rgb(221, 87, 221);
+}
+.section2{
+    height: 80vh;
+    width: 100vw;
+}
+
+.text{
+ margin-top: 50px;
+ margin-left: 150px;
+width: fit-content;
+font-size: 0.8rem;
+}
+h2{
+    margin-left: 150px;
+}
+.line{
+    width: 80vw;
+    display: flex;
+    height: 1.5px;
+    background-color: white;
+    margin: 50px auto;
+}
+.parts{
+    width: 1px;
+    height:5vw;
+    background-color: white;
+    margin:0px auto;
+}
+.para{
+    height: 10rem;
+    width: 5rem;
+
+}
+.paragraphs{
+    display: flex;
+       justify-content: space-evenly;
+       margin-top: 1rem;
+}
+
+    </style>
+</head>
+<body>
+
+  <nav class="navbar">
+   <div class="logo" >Dilawar's Portfolio</div>
+   <div class="hamburger" onclick="toggleMenu()">☰</div>
+<ul class="nav-links" id="navLinks">
+<form action="/home" method="get"><button type="submit">Home</button></form>
+<form action="/about" method="get"><button  type="submit">About</button></form>
+<form action="/skills" method="get"><button type="submit">Skills</button></form>
+<form action="/projects" method="get"><button type="submit">Projects</button></form>
+<form action="/contactus" method="get"><button type="submit">Contact-us</button></form>
+<form action="/profile" method="get"><button type="submit">Profile</button></form>
+<form action="/admin" method="get"><button type="submit">Admin</button></form>
+<form action="/logout" method="get"><button type="submit">Logout</button></form>
+</ul>
+</nav>
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+  
+      <main class="section1">
+        <div class="leftmain">
+          <div>Hi, I am <span>Muhammad Dilawar khan</span></div>
+          <div>a full stack web developer</div>
+          <div>I design sleek,responsive frontends and build robust backends </div>
+          <div>to create powerfull websites and web applications.</div>
+          <div>I deliver end-to-end development with clean code and solid performance </div>
+            <br>
+            <div>Looking for a professional online presence for your business or personal brand? </div> 
+            <div>Let's build something great together! <a style="color:rgb(37, 226, 232);" href="contactus">Contact-Me.</a> </div>
+        </div>
+        <div class="rightmain">
+          <img style="display: flex; justify-content: center;align-items: center; margin: 20px auto;"
+            src="\pngtree-developers-are-coding-programs-on-computers-programmers-are-analyzing-data-png-image_11902650.png"
+            alt="some error"
+          />
+        </div>
+
+         <a style="width: fit-content; border-radius: 10px;" href="/resume.png" download class="download-btn">Download Resume</a>
+      </main>
+</body>
+</html>

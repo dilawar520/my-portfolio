@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    width: 90vw;
+    color: white;
+    height: 90vh;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: rgb(15, 29, 71)
+    
+   /* font-family: Arial, sans-serif; */
+}
+
+button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: x-large;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    /* width: 152px;
+    height: 52px; */
+    color: rgb(33, 96, 129);
+    transform: translateX(2px);
+    transform: translateY(2px);
+    transition: all ease 0.3s;
+}

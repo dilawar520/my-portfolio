@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+<style>
+          body{
+     background-color: rgb(15, 29, 71)
+      }
+      form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    color: white;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+input{
+    border-radius: 5px;
+   width: 300px;
+   font-size: large;
+   height: 30px;
+   border-radius: 5px;
+}
+button{
+    padding: 10px;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: rgb(27, 48, 44);
+  transform: translate(2px);
+  transition:all 0.5s;
+}
+</style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <label for="email" autofocus="">Enter your email </label>
+        <input name="email" type="text" placeholder="Enter email">
+        <label for="password">Enter your password</label>
+        <input name="password" type="text" placeholder="Enter pasword">
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>
